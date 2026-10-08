@@ -1,0 +1,40 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="AIDE Problem Uploader by Kabul" Manufacturer="Kabul" Version="3.0.0.0" UpgradeCode="b3a7c64f-4d32-4d2c-8b8a-9818817b1d9c">
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER" Name="ProblemReporterS3Uploader" />
+    </StandardDirectory>
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ServiceComponents" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <ComponentGroup Id="ServiceComponents" Directory="INSTALLFOLDER">
+      <Component Id="ServiceExecutable" Guid="c33325c7-5079-40c2-9214-9fa107eecdc4">
+        <File Id="S3UploaderServiceExe" Source="bin\Release\net8.0\win-x64\publish\S3UploaderService.exe" KeyPath="yes" />
+        
+        <ServiceInstall Id="ServiceInstaller"
+                        Type="ownProcess"
+                        Name="ProblemReporterS3Uploader"
+                        DisplayName="Problem Reporter S3 Uploader Service"
+                        Description="Uploads CSV files to AWS S3 bucket."
+                        Start="auto"
+                        Account="LocalSystem"
+                        ErrorControl="normal" />
+
+        <ServiceControl Id="StartService" Start="install" Stop="both" Remove="uninstall" Name="ProblemReporterS3Uploader" Wait="yes" />
+      </Component>
+
+      <Component Id="AppSettings" Guid="e33325c7-5079-40c2-9214-9fa107eecdc5">
+        <File Id="AppSettingsJson" Source="bin\Release\net8.0\win-x64\publish\appsettings.json" />
+      </Component>
+
+      <Component Id="AwsSigningHelperComponent" Guid="e55525c7-5079-40c2-9214-9fa107eecdc7">
+        <File Id="AwsSigningHelperExe" Source="bin\Release\net8.0\win-x64\publish\aws_signing_helper.exe" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

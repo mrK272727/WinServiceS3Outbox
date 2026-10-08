@@ -1,0 +1,6 @@
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\appsettings.json
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\cert.json
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\cert_selector.json
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\S3UploaderService.pdb
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\aws_signing_helper.exe
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\bin\Release\net8.0\win-x64\publish\S3UploaderService.exe

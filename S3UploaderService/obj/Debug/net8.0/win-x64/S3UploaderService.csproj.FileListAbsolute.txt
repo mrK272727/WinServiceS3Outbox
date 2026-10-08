@@ -1,0 +1,5 @@
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\obj\Debug\net8.0\win-x64\S3UploaderService.csproj.AssemblyReference.cache
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\obj\Debug\net8.0\win-x64\S3UploaderService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\obj\Debug\net8.0\win-x64\S3UploaderService.AssemblyInfoInputs.cache
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\obj\Debug\net8.0\win-x64\S3UploaderService.AssemblyInfo.cs
+C:\Users\mrfue\MTTR_Reducer\S3UploaderService\obj\Debug\net8.0\win-x64\S3UploaderService.csproj.CoreCompileInputs.cache

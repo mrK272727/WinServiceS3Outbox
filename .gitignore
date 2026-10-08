@@ -1,0 +1,6 @@
+# PowerShell
+*.swp
+*.log
+Tools/
+TSS/
+TSS.zip
